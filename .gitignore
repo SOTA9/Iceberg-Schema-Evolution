@@ -1,0 +1,28 @@
+# GCP credentials
+configs/gcp_credentials.json
+
+# Airflow
+airflow.cfg
+
+.env
+
+# Astronomer / Docker
+.dockerignore
+*.tar
+*.img
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.egg-info/
+*.egg
+
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

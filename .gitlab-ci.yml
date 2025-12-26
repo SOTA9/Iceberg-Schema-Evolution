@@ -1,0 +1,54 @@
+stages:
+  - test
+  - build
+  - deploy
+  - trigger_pipeline
+
+variables:
+  # Windows requires full path for GCP credentials
+  GOOGLE_APPLICATION_CREDENTIALS: "${CI_PROJECT_DIR}\\configs\\gcp_credentials.json"
+
+before_script:
+  # Install Python dependencies
+  - pip install -r requirements.txt
+  # Load environment variables from .env (Windows-friendly)
+  - for /F "tokens=*" %%i in (.env) do set %%i
+
+test:
+  stage: test
+  script:
+    - python src\bronze_ingest_api.py
+    - python src\silver_transform.py
+    - python src\gold_load.py
+  only:
+    - merge_requests
+    - main
+
+build:
+  stage: build
+  image: astronomerinc/ap-airflow:2.7.0-python3.11
+  script:
+    - docker build -t ecommerce-lakehouse-api:latest .
+  only:
+    - main
+
+deploy:
+  stage: deploy
+  script:
+    # Copy DAGs and src to Astronomer project directory
+    - xcopy /E /I /Y dags\ %ASTRONOMER_PROJECT%\dags\
+    - xcopy /E /I /Y src\ %ASTRONOMER_PROJECT%\src\
+  only:
+    - main
+
+trigger_pipeline:
+  stage: trigger_pipeline
+  script:
+    # Trigger Bronze DAG
+    - powershell -Command "Invoke-RestMethod -Method Post -Uri 'https://<astronomer-endpoint>/api/v1/dags/bronze_ingest_auto_schema/dagRuns' -Headers @{Authorization='Bearer $ASTRONOMER_TOKEN'; 'Content-Type'='application/json'} -Body '{\"conf\":{}}'"
+    # Trigger Silver DAG
+    - powershell -Command "Invoke-RestMethod -Method Post -Uri 'https://<astronomer-endpoint>/api/v1/dags/silver_transform_pipeline/dagRuns' -Headers @{Authorization='Bearer $ASTRONOMER_TOKEN'; 'Content-Type'='application/json'} -Body '{\"conf\":{}}'"
+    # Trigger Gold DAG
+    - powershell -Command "Invoke-RestMethod -Method Post -Uri 'https://<astronomer-endpoint>/api/v1/dags/gold_load_pipeline/dagRuns' -Headers @{Authorization='Bearer $ASTRONOMER_TOKEN'; 'Content-Type'='application/json'} -Body '{\"conf\":{}}'"
+  only:
+    - main
