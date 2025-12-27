@@ -1,28 +1,31 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from datetime import datetime, timedelta
+from datetime import datetime
+import os
 from src.bronze_ingest_api import ingest_bronze_api
+from dotenv import load_dotenv
+
+ENV = os.getenv("ENV", "dev")
+load_dotenv(f"/opt/airflow/configs/{ENV}/.env")
 
 default_args = {
-    'owner': 'data-engineer',
+    'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2025, 12, 26),
-    'retries': 1,
-    'retry_delay': timedelta(minutes=5),
+    'start_date': datetime(2025, 1, 1),
+    'retries': 1
 }
 
-dag = DAG(
-    'bronze_ingest_auto_schema',
+with DAG(
+    dag_id=f"bronze_ingest_{ENV}",
     default_args=default_args,
     schedule_interval='@daily',
-    catchup=False,
-    description='Ingest API data and automatically evolve Bronze schema'
-)
+    catchup=False
+) as dag:
 
-ingest_task = PythonOperator(
-    task_id='ingest_and_evolve',
-    python_callable=ingest_bronze_api,
-    dag=dag
-)
+    ingest_task = PythonOperator(
+        task_id="ingest_bronze_api",
+        python_callable=ingest_bronze_api
+    )
+
 
 

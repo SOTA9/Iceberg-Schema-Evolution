@@ -1,10 +1,9 @@
-from spark_session import spark
+from spark_session import spark, SILVER_BUCKET
 from pyspark.sql import functions as F
 from snapshot_logger import log_snapshot
 
 TABLE_BRONZE = "gcs_catalog.ecommerce.bronze_orders"
 TABLE_SILVER = "gcs_catalog.ecommerce.silver_orders"
-
 
 def transform_silver():
     df_bronze = spark.table(TABLE_BRONZE)
@@ -31,6 +30,7 @@ def transform_silver():
 
     df_silver = df_flat.withColumn("total_amount", F.col("quantity") * 10.0)
 
+    # Create silver table if missing
     spark.sql(f"""
     CREATE TABLE IF NOT EXISTS {TABLE_SILVER} (
         order_id STRING,
@@ -45,15 +45,16 @@ def transform_silver():
     )
     USING ICEBERG
     PARTITIONED BY (ingest_date)
-    LOCATION 'gs://ecommerce-silver/'
+    LOCATION '{SILVER_BUCKET}'
     """)
 
     df_silver.writeTo(TABLE_SILVER).append()
+
     snapshot_id = log_snapshot(TABLE_SILVER)
     return snapshot_id
 
-
 if __name__ == "__main__":
     transform_silver()
+
 
 

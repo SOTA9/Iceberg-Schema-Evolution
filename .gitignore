@@ -1,0 +1,4 @@
+# Ignore sensitive files locally
+configs/dev/.env
+configs/
+.idea/

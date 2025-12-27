@@ -34,7 +34,7 @@ This project implements a **fully automated data pipeline** for ingesting, trans
 cd ecommerce-lakehouse-api
 
 # Build Astronomer Docker image
-docker build -t ecommerce-lakehouse-api:latest .
+docker build -t schema-evolution-iceberg:latest .
 
 pip install -r requirements.txt
 

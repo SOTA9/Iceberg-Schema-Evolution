@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  airflow-webserver:
+    image: schema-evolution-iceberg:dev
+    container_name: airflow-webserver-dev
+    restart: always
+    environment:
+      - AIRFLOW_HOME=/opt/airflow
+      - ENV=dev
+    ports:
+      - "8080:8080"
+    volumes:
+      - C:\Users\USER\PycharmProjects\schema-evolution-iceberg\dags:/opt/airflow/dags
+      - C:\Users\USER\PycharmProjects\schema-evolution-iceberg\src:/opt/airflow/project_src
+      - C:\Users\USER\PycharmProjects\schema-evolution-iceberg\configs\dev:/opt/airflow/project_configs
+    command: webserver
+    depends_on:
+      - airflow-scheduler
+
+  airflow-scheduler:
+    image: schema-evolution-iceberg:dev
+    container_name: airflow-scheduler-dev
+    restart: always
+    environment:
+      - AIRFLOW_HOME=/opt/airflow
+      - ENV=dev
+    volumes:
+      - C:\Users\USER\PycharmProjects\schema-evolution-iceberg\dags:/opt/airflow/dags
+      - C:\Users\USER\PycharmProjects\schema-evolution-iceberg\src:/opt/airflow/project_src
+      - C:\Users\USER\PycharmProjects\schema-evolution-iceberg\configs\dev:/opt/airflow/project_configs
+    command: scheduler

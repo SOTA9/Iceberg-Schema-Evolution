@@ -1,54 +1,103 @@
 stages:
-  - test
   - build
+  - test
   - deploy
-  - trigger_pipeline
+  - trigger_dags
 
 variables:
-  # Windows requires full path for GCP credentials
-  GOOGLE_APPLICATION_CREDENTIALS: "${CI_PROJECT_DIR}\\configs\\gcp_credentials.json"
+  IMAGE_NAME: registry.gitlab.com/your-namespace/schema-evolution-iceberg
+  IMAGE_TAG: $CI_COMMIT_SHORT_SHA
 
-before_script:
-  # Install Python dependencies
-  - pip install -r requirements.txt
-  # Load environment variables from .env (Windows-friendly)
-  - for /F "tokens=*" %%i in (.env) do set %%i
-
-test:
-  stage: test
-  script:
-    - python src\bronze_ingest_api.py
-    - python src\silver_transform.py
-    - python src\gold_load.py
-  only:
-    - merge_requests
-    - main
-
+# -------------------------------
+# 1️⃣ Build Docker Image with Cache
+# -------------------------------
 build:
   stage: build
-  image: astronomerinc/ap-airflow:2.7.0-python3.11
+  image: docker:20.10.16
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
   script:
-    - docker build -t ecommerce-lakehouse-api:latest .
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker pull $IMAGE_NAME:latest || true
+    - docker build --cache-from $IMAGE_NAME:latest -t $IMAGE_NAME:$IMAGE_TAG ./docker
+    - docker tag $IMAGE_NAME:$IMAGE_TAG $IMAGE_NAME:latest
+    - docker push $IMAGE_NAME:$IMAGE_TAG
+    - docker push $IMAGE_NAME:latest
   only:
+    changes:
+      - docker/*
+      - src/*
+      - requirements.txt
+
+# -------------------------------
+# 2️⃣ Dev Tests (Feature Branches)
+# -------------------------------
+test_dev:
+  stage: test
+  image: docker:20.10.16
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+  script:
+    - echo "Running DAG scripts in DEV environment..."
+    - docker run --env-file configs/dev/.env $IMAGE_NAME:$IMAGE_TAG python src/bronze_ingest_api.py
+    - docker run --env-file configs/dev/.env $IMAGE_NAME:$IMAGE_TAG python src/silver_transform.py
+    - docker run --env-file configs/dev/.env $IMAGE_NAME:$IMAGE_TAG python src/gold_load.py
+  only:
+    - merge_requests
+    - branches
+  except:
     - main
 
-deploy:
+# -------------------------------
+# 3️⃣ Deploy Prod Docker Image (Manual Approval)
+# -------------------------------
+deploy_prod:
   stage: deploy
+  image: docker:20.10.16
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
   script:
-    # Copy DAGs and src to Astronomer project directory
-    - xcopy /E /I /Y dags\ %ASTRONOMER_PROJECT%\dags\
-    - xcopy /E /I /Y src\ %ASTRONOMER_PROJECT%\src\
-  only:
-    - main
+    - echo "Deploying PROD Docker image..."
+    - docker build --cache-from $IMAGE_NAME:latest -t $IMAGE_NAME:prod ./docker
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker push $IMAGE_NAME:prod
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  when: manual
 
-trigger_pipeline:
-  stage: trigger_pipeline
-  script:
-    # Trigger Bronze DAG
-    - powershell -Command "Invoke-RestMethod -Method Post -Uri 'https://<astronomer-endpoint>/api/v1/dags/bronze_ingest_auto_schema/dagRuns' -Headers @{Authorization='Bearer $ASTRONOMER_TOKEN'; 'Content-Type'='application/json'} -Body '{\"conf\":{}}'"
-    # Trigger Silver DAG
-    - powershell -Command "Invoke-RestMethod -Method Post -Uri 'https://<astronomer-endpoint>/api/v1/dags/silver_transform_pipeline/dagRuns' -Headers @{Authorization='Bearer $ASTRONOMER_TOKEN'; 'Content-Type'='application/json'} -Body '{\"conf\":{}}'"
-    # Trigger Gold DAG
-    - powershell -Command "Invoke-RestMethod -Method Post -Uri 'https://<astronomer-endpoint>/api/v1/dags/gold_load_pipeline/dagRuns' -Headers @{Authorization='Bearer $ASTRONOMER_TOKEN'; 'Content-Type'='application/json'} -Body '{\"conf\":{}}'"
-  only:
-    - main
+# -------------------------------
+# 4️⃣ Trigger Airflow DAGs in Prod (Manual, YAML-safe)
+# -------------------------------
+trigger_prod_dags:
+  stage: trigger_dags
+  image: curlimages/curl:latest
+  variables:
+    AIRFLOW_USER: "admin"
+    AIRFLOW_PASSWORD: "StrongPassword123"
+  script: |
+    echo "Triggering Bronze DAG..."
+    curl -X POST "http://prod-airflow-webserver:8080/api/v1/dags/bronze_ingest_prod/dagRuns" \
+         -u "$AIRFLOW_USER:$AIRFLOW_PASSWORD" \
+         -H "Content-Type: application/json" \
+         -d '{"conf": {"env":"prod"}}'
+
+    echo "Triggering Silver DAG..."
+    curl -X POST "http://prod-airflow-webserver:8080/api/v1/dags/silver_transform_prod/dagRuns" \
+         -u "$AIRFLOW_USER:$AIRFLOW_PASSWORD" \
+         -H "Content-Type: application/json" \
+         -d '{"conf": {"env":"prod"}}'
+
+    echo "Triggering Gold DAG..."
+    curl -X POST "http://prod-airflow-webserver:8080/api/v1/dags/gold_load_prod/dagRuns" \
+         -u "$AIRFLOW_USER:$AIRFLOW_PASSWORD" \
+         -H "Content-Type: application/json" \
+         -d '{"conf": {"env":"prod"}}'
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  when: manual
