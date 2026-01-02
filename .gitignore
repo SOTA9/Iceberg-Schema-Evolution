@@ -2,3 +2,4 @@
 configs/dev/.env
 configs/
 .idea/
+.env
