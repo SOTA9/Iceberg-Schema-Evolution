@@ -1,44 +1,69 @@
-version: '3.9'
+version: "3.9"
 
 services:
+  # ----------------------
+  # Postgres (Airflow metadata DB)
+  # ----------------------
   postgres:
     image: postgres:15
-    container_name: airflow_postgres
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
-    ports:
-      - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
 
-  airflow:
-    build:
-      context: ./docker
-      dockerfile: Dockerfile
-    container_name: airflow
-    restart: always
+  # ----------------------
+  # Airflow Webserver
+  # ----------------------
+  airflow-webserver:
+    build: ./airflow
     depends_on:
-      - postgres
-    ports:
-      - "8080:8080"
-    env_file: .env
+      postgres:
+        condition: service_healthy
+    env_file:
+      - ./configs/dev/.env
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
-      AIRFLOW__CORE__LOAD_EXAMPLES: 'False'
-      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
-      POSTGRES_HOST: postgres
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
     volumes:
-      - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs
-      - ./plugins:/opt/airflow/plugins
-      - ./docker/entrypoint.sh:/entrypoint.sh
-    entrypoint: ["/entrypoint.sh"]
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - airflow-db-volume:/opt/airflow/airflow.db   # persistent Airflow DB
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8080:8080"
+    command: webserver
 
+  # ----------------------
+  # Airflow Scheduler
+  # ----------------------
+  airflow-scheduler:
+    build: ./airflow
+    depends_on:
+      airflow-webserver:
+        condition: service_started
+    env_file:
+      - ./configs/dev/.env
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - airflow-db-volume:/opt/airflow/airflow.db
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: scheduler
+
+# ----------------------
+# Volumes
+# ----------------------
 volumes:
-  postgres_data:
-
-
+  postgres-db-volume:
+  airflow-db-volume:
 

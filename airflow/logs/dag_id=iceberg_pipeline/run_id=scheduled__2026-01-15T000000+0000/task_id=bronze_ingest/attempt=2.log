@@ -1,0 +1,95 @@
+[2026-01-16T11:09:54.561+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-16T11:09:54.630+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: iceberg_pipeline.bronze_ingest scheduled__2026-01-15T00:00:00+00:00 [queued]>
+[2026-01-16T11:09:54.661+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: iceberg_pipeline.bronze_ingest scheduled__2026-01-15T00:00:00+00:00 [queued]>
+[2026-01-16T11:09:54.662+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 3
+[2026-01-16T11:09:54.684+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): bronze_ingest> on 2026-01-15 00:00:00+00:00
+[2026-01-16T11:09:54.695+0000] {standard_task_runner.py:64} INFO - Started process 494 to run task
+[2026-01-16T11:09:54.702+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'iceberg_pipeline', 'bronze_ingest', 'scheduled__2026-01-15T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/iceberg_dag.py', '--cfg-path', '/tmp/tmpprc2qvfo']
+[2026-01-16T11:09:54.706+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask bronze_ingest
+[2026-01-16T11:09:54.984+0000] {task_command.py:426} INFO - Running <TaskInstance: iceberg_pipeline.bronze_ingest scheduled__2026-01-15T00:00:00+00:00 [running]> on host fb448a005668
+[2026-01-16T11:09:55.338+0000] {abstractoperator.py:725} ERROR - Exception rendering Jinja template for task 'bronze_ingest', field 'environment'. Template: {'API_URL': '{{ env.API_URL }}', 'BRONZE_BUCKET': '{{ env.BRONZE_BUCKET }}'}
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 717, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/template/templater.py", line 181, in render_template
+    return {k: self.render_template(v, context, jinja_env, oids) for k, v in value.items()}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/template/templater.py", line 181, in <dictcomp>
+    return {k: self.render_template(v, context, jinja_env, oids) for k, v in value.items()}
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/template/templater.py", line 169, in render_template
+    return self._render(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 675, in _render
+    return super()._render(template, context, dag=dag)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/template/templater.py", line 126, in _render
+    return render_template_to_string(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/helpers.py", line 289, in render_template_to_string
+    return render_template(template, cast(MutableMapping[str, Any], context), native=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/helpers.py", line 284, in render_template
+    return "".join(nodes)
+           ^^^^^^^^^^^^^^
+  File "<template>", line 12, in root
+  File "/home/airflow/.local/lib/python3.11/site-packages/jinja2/sandbox.py", line 327, in getattr
+    value = getattr(obj, attribute)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/jinja2/runtime.py", line 864, in __getattr__
+    return self._fail_with_undefined_error()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/jinja2/runtime.py", line 857, in _fail_with_undefined_error
+    raise self._undefined_exception(self._undefined_message)
+jinja2.exceptions.UndefinedError: 'env' is undefined
+[2026-01-16T11:09:55.353+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2479, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2633, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context, jinja_env=jinja_env)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3094, in render_templates
+    original_task.render_template_fields(context, jinja_env)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 1337, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 717, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/template/templater.py", line 181, in render_template
+    return {k: self.render_template(v, context, jinja_env, oids) for k, v in value.items()}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/template/templater.py", line 181, in <dictcomp>
+    return {k: self.render_template(v, context, jinja_env, oids) for k, v in value.items()}
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/template/templater.py", line 169, in render_template
+    return self._render(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/abstractoperator.py", line 675, in _render
+    return super()._render(template, context, dag=dag)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/template/templater.py", line 126, in _render
+    return render_template_to_string(template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/helpers.py", line 289, in render_template_to_string
+    return render_template(template, cast(MutableMapping[str, Any], context), native=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/helpers.py", line 284, in render_template
+    return "".join(nodes)
+           ^^^^^^^^^^^^^^
+  File "<template>", line 12, in root
+  File "/home/airflow/.local/lib/python3.11/site-packages/jinja2/sandbox.py", line 327, in getattr
+    value = getattr(obj, attribute)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/jinja2/runtime.py", line 864, in __getattr__
+    return self._fail_with_undefined_error()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/jinja2/runtime.py", line 857, in _fail_with_undefined_error
+    raise self._undefined_exception(self._undefined_message)
+jinja2.exceptions.UndefinedError: 'env' is undefined
+[2026-01-16T11:09:55.386+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=iceberg_pipeline, task_id=bronze_ingest, run_id=scheduled__2026-01-15T00:00:00+00:00, execution_date=20260115T000000, start_date=20260116T110954, end_date=20260116T110955
+[2026-01-16T11:09:55.414+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 7 for task bronze_ingest ('env' is undefined; 494)
+[2026-01-16T11:09:55.467+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-01-16T11:09:55.528+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-16T11:09:55.531+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

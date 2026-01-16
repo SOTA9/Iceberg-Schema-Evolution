@@ -1,0 +1,1165 @@
+[2026-01-16T10:37:46.611+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:37:46.614+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:37:46.616+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:37:46.616+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:37:46.671+0000] {processor.py:840} INFO - DAG(s) 'ecommerce_iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:37:47.870+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:37:47.869+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:ecommerce_iceberg_pipeline
+[2026-01-16T10:37:47.916+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:37:47.915+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:ecommerce_iceberg_pipeline
+[2026-01-16T10:37:47.931+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:37:47.931+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:ecommerce_iceberg_pipeline
+[2026-01-16T10:37:47.932+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:37:47.932+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:37:47.948+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:37:47.948+0000] {dag.py:3111} INFO - Creating ORM DAG for ecommerce_iceberg_pipeline
+[2026-01-16T10:37:47.966+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:37:47.966+0000] {dag.py:3947} INFO - Setting next_dagrun for ecommerce_iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:37:48.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 1.424 seconds
+[2026-01-16T10:38:19.152+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:38:19.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:38:19.154+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:38:19.154+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:38:19.179+0000] {processor.py:840} INFO - DAG(s) 'ecommerce_iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:38:19.220+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:38:19.219+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:38:19.245+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:38:19.245+0000] {dag.py:3947} INFO - Setting next_dagrun for ecommerce_iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:38:19.268+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.385 seconds
+[2026-01-16T10:38:49.837+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:38:49.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:38:49.846+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:38:49.845+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:38:49.927+0000] {processor.py:840} INFO - DAG(s) 'ecommerce_iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:38:50.127+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:38:50.127+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:38:50.267+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:38:50.266+0000] {dag.py:3947} INFO - Setting next_dagrun for ecommerce_iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:38:50.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.529 seconds
+[2026-01-16T10:39:20.967+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:39:20.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:39:20.971+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:39:20.971+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:39:21.022+0000] {processor.py:840} INFO - DAG(s) 'ecommerce_iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:39:21.099+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:39:21.099+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:39:21.156+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:39:21.156+0000] {dag.py:3947} INFO - Setting next_dagrun for ecommerce_iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T10:39:21.193+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.245 seconds
+[2026-01-16T10:39:51.673+0000] {processor.py:161} INFO - Started process (PID=183) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:39:51.675+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:39:51.678+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:39:51.677+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:39:51.703+0000] {processor.py:840} INFO - DAG(s) 'ecommerce_iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:39:51.740+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:39:51.739+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:39:51.764+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:39:51.764+0000] {dag.py:3947} INFO - Setting next_dagrun for ecommerce_iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T10:39:51.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.139 seconds
+[2026-01-16T10:40:22.048+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:40:22.049+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:40:22.052+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:40:22.051+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:40:22.090+0000] {processor.py:840} INFO - DAG(s) 'ecommerce_iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:40:22.146+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:40:22.144+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:40:22.188+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:40:22.187+0000] {dag.py:3947} INFO - Setting next_dagrun for ecommerce_iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T10:40:22.211+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.175 seconds
+[2026-01-16T10:40:52.489+0000] {processor.py:161} INFO - Started process (PID=193) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:40:52.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:40:52.494+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:40:52.493+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:40:52.526+0000] {processor.py:840} INFO - DAG(s) 'ecommerce_iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:40:52.581+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:40:52.581+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:40:52.605+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:40:52.605+0000] {dag.py:3947} INFO - Setting next_dagrun for ecommerce_iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T10:40:52.641+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.163 seconds
+[2026-01-16T10:41:23.081+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:41:23.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:41:23.088+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:23.088+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:41:23.118+0000] {processor.py:840} INFO - DAG(s) 'ecommerce_iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:41:23.183+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:23.182+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:41:23.217+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:23.217+0000] {dag.py:3947} INFO - Setting next_dagrun for ecommerce_iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T10:41:23.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.341 seconds
+[2026-01-16T10:41:25.590+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:41:25.591+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:41:25.594+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:25.593+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:41:25.633+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:41:26.358+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:26.357+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:iceberg_pipeline
+[2026-01-16T10:41:26.416+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:26.411+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:iceberg_pipeline
+[2026-01-16T10:41:26.440+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:26.439+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:iceberg_pipeline
+[2026-01-16T10:41:26.441+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:26.441+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:41:26.463+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:26.462+0000] {dag.py:3111} INFO - Creating ORM DAG for iceberg_pipeline
+[2026-01-16T10:41:26.482+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:26.481+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:41:26.537+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.959 seconds
+[2026-01-16T10:41:57.163+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:41:57.166+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:41:57.173+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:57.172+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:41:57.210+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:41:57.257+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:57.256+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:41:57.317+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:41:57.315+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:41:57.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.239 seconds
+[2026-01-16T10:42:27.791+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:42:27.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:42:27.794+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:42:27.794+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:42:27.819+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:42:27.854+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:42:27.854+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:42:27.882+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:42:27.882+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:42:27.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.119 seconds
+[2026-01-16T10:42:58.342+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:42:58.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:42:58.347+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:42:58.346+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:42:58.379+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:42:58.419+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:42:58.418+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:42:58.444+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:42:58.444+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:42:58.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.132 seconds
+[2026-01-16T10:43:28.710+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:43:28.711+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:43:28.714+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:43:28.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:43:28.738+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:43:28.775+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:43:28.775+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:43:28.802+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:43:28.802+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:43:28.827+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.124 seconds
+[2026-01-16T10:43:59.186+0000] {processor.py:161} INFO - Started process (PID=228) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:43:59.187+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:43:59.189+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:43:59.188+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:43:59.227+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:43:59.304+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:43:59.303+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:43:59.350+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:43:59.350+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:43:59.413+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.236 seconds
+[2026-01-16T10:44:29.499+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:44:29.502+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:44:29.505+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:44:29.504+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:44:29.544+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:44:29.581+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:44:29.581+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:44:29.604+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:44:29.604+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:44:29.629+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.147 seconds
+[2026-01-16T10:44:59.869+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:44:59.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:44:59.871+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:44:59.871+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:44:59.894+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:44:59.930+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:44:59.930+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:44:59.952+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:44:59.952+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:44:59.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.114 seconds
+[2026-01-16T10:45:30.201+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:45:30.202+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:45:30.203+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:45:30.203+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:45:30.225+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:45:30.264+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:45:30.263+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:45:30.286+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:45:30.286+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:45:30.312+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.118 seconds
+[2026-01-16T10:46:00.589+0000] {processor.py:161} INFO - Started process (PID=248) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:46:00.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:46:00.592+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:46:00.591+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:46:00.613+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:46:00.649+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:46:00.649+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:46:00.675+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:46:00.675+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:46:00.698+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.116 seconds
+[2026-01-16T10:46:30.908+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:46:30.909+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:46:30.911+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:46:30.910+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:46:30.938+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:46:30.975+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:46:30.975+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:46:30.998+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:46:30.997+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:46:31.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.118 seconds
+[2026-01-16T10:47:01.319+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:47:01.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:47:01.321+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:47:01.321+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:47:01.342+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:47:01.378+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:47:01.378+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:47:01.401+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:47:01.400+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:47:01.420+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.111 seconds
+[2026-01-16T10:47:31.624+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:47:31.625+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:47:31.626+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:47:31.626+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:47:31.647+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:47:31.686+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:47:31.686+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:47:31.709+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:47:31.708+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:47:31.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.112 seconds
+[2026-01-16T10:48:02.296+0000] {processor.py:161} INFO - Started process (PID=268) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:48:02.299+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:48:02.302+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:48:02.301+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:48:02.472+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:48:02.667+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:48:02.666+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:48:02.779+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:48:02.778+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:48:02.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.612 seconds
+[2026-01-16T10:48:33.288+0000] {processor.py:161} INFO - Started process (PID=273) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:48:33.291+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:48:33.293+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:48:33.293+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:48:33.331+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:48:33.385+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:48:33.385+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:48:33.416+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:48:33.416+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:48:33.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.165 seconds
+[2026-01-16T10:49:03.625+0000] {processor.py:161} INFO - Started process (PID=278) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:49:03.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:49:03.627+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:49:03.627+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:49:03.648+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:49:03.684+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:49:03.683+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:49:03.706+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:49:03.706+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:49:03.728+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.110 seconds
+[2026-01-16T10:49:34.072+0000] {processor.py:161} INFO - Started process (PID=283) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:49:34.073+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:49:34.074+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:49:34.074+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:49:34.099+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:49:34.172+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:49:34.172+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:49:34.205+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:49:34.205+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:49:34.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.148 seconds
+[2026-01-16T10:50:04.488+0000] {processor.py:161} INFO - Started process (PID=288) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:50:04.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:50:04.491+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:50:04.490+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:50:04.528+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:50:04.592+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:50:04.591+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:50:04.625+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:50:04.625+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:50:04.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.176 seconds
+[2026-01-16T10:50:34.932+0000] {processor.py:161} INFO - Started process (PID=293) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:50:34.933+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:50:34.934+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:50:34.934+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:50:34.969+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:50:35.086+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:50:35.086+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:50:35.135+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:50:35.135+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:50:35.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.254 seconds
+[2026-01-16T10:51:05.443+0000] {processor.py:161} INFO - Started process (PID=298) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:51:05.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:51:05.445+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:51:05.445+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:51:05.468+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:51:05.507+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:51:05.506+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:51:05.529+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:51:05.529+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:51:05.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.119 seconds
+[2026-01-16T10:51:35.914+0000] {processor.py:161} INFO - Started process (PID=303) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:51:35.915+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:51:35.916+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:51:35.916+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:51:35.952+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:51:36.011+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:51:36.011+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:51:36.035+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:51:36.035+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:51:36.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.154 seconds
+[2026-01-16T10:52:06.309+0000] {processor.py:161} INFO - Started process (PID=308) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:52:06.310+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:52:06.312+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:52:06.312+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:52:06.348+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:52:06.411+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:52:06.410+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:52:06.445+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:52:06.445+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:52:06.479+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.186 seconds
+[2026-01-16T10:52:36.777+0000] {processor.py:161} INFO - Started process (PID=313) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:52:36.778+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:52:36.779+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:52:36.778+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:52:36.801+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:52:36.838+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:52:36.837+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:52:36.862+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:52:36.862+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:52:36.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.113 seconds
+[2026-01-16T10:53:07.295+0000] {processor.py:161} INFO - Started process (PID=318) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:53:07.299+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:53:07.302+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:53:07.300+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:53:07.339+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:53:07.383+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:53:07.382+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:53:07.408+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:53:07.408+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:53:07.433+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.171 seconds
+[2026-01-16T10:53:37.823+0000] {processor.py:161} INFO - Started process (PID=323) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:53:37.826+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:53:37.828+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:53:37.827+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:53:37.854+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:53:37.916+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:53:37.915+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:53:37.959+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:53:37.959+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:53:37.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.189 seconds
+[2026-01-16T10:54:08.138+0000] {processor.py:161} INFO - Started process (PID=328) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:54:08.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:54:08.141+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:54:08.141+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:54:08.169+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:54:08.221+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:54:08.221+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:54:08.263+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:54:08.262+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:54:08.296+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.172 seconds
+[2026-01-16T10:54:38.605+0000] {processor.py:161} INFO - Started process (PID=333) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:54:38.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:54:38.608+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:54:38.607+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:54:38.629+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:54:38.682+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:54:38.681+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:54:38.724+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:54:38.723+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:54:38.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.156 seconds
+[2026-01-16T10:55:08.983+0000] {processor.py:161} INFO - Started process (PID=338) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:55:08.985+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:55:08.987+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:55:08.987+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:55:09.009+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:55:09.059+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:55:09.058+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:55:09.088+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:55:09.087+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:55:09.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.136 seconds
+[2026-01-16T10:55:39.471+0000] {processor.py:161} INFO - Started process (PID=343) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:55:39.473+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:55:39.474+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:55:39.474+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:55:39.505+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:55:39.544+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:55:39.544+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:55:39.570+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:55:39.569+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:55:39.633+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.168 seconds
+[2026-01-16T10:56:09.894+0000] {processor.py:161} INFO - Started process (PID=348) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:56:09.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:56:09.897+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:56:09.897+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:56:09.919+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:56:09.957+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:56:09.957+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:56:09.980+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:56:09.980+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:56:10.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.123 seconds
+[2026-01-16T10:56:40.348+0000] {processor.py:161} INFO - Started process (PID=353) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:56:40.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:56:40.351+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:56:40.350+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:56:40.386+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:56:40.431+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:56:40.430+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:56:40.465+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:56:40.465+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:56:40.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.163 seconds
+[2026-01-16T10:57:10.697+0000] {processor.py:161} INFO - Started process (PID=358) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:57:10.698+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:57:10.700+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:57:10.699+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:57:10.721+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:57:10.758+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:57:10.757+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:57:10.782+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:57:10.781+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:57:10.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.114 seconds
+[2026-01-16T10:57:41.018+0000] {processor.py:161} INFO - Started process (PID=363) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:57:41.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:57:41.021+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:57:41.020+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:57:41.042+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:57:41.077+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:57:41.077+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:57:41.100+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:57:41.100+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:57:41.123+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.112 seconds
+[2026-01-16T10:58:11.615+0000] {processor.py:161} INFO - Started process (PID=368) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:58:11.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:58:11.618+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:58:11.618+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:58:11.640+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:58:11.675+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:58:11.674+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:58:11.697+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:58:11.697+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:58:11.720+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.110 seconds
+[2026-01-16T10:58:41.983+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:58:41.984+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:58:41.986+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:58:41.986+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:58:42.009+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:58:42.047+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:58:42.047+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:58:42.073+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:58:42.073+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:58:42.094+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.118 seconds
+[2026-01-16T10:59:12.351+0000] {processor.py:161} INFO - Started process (PID=378) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:59:12.352+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:59:12.353+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:59:12.353+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:59:12.375+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:59:12.413+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:59:12.413+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:59:12.444+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:59:12.443+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:59:12.468+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.123 seconds
+[2026-01-16T10:59:42.741+0000] {processor.py:161} INFO - Started process (PID=383) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:59:42.743+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T10:59:42.744+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:59:42.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:59:42.776+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T10:59:42.820+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:59:42.820+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T10:59:42.848+0000] {logging_mixin.py:188} INFO - [2026-01-16T10:59:42.848+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T10:59:42.874+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.142 seconds
+[2026-01-16T11:00:13.362+0000] {processor.py:161} INFO - Started process (PID=388) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:00:13.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:00:13.365+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:00:13.364+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:00:13.413+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:00:13.491+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:00:13.490+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:00:13.539+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:00:13.538+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:00:13.564+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.214 seconds
+[2026-01-16T11:00:43.650+0000] {processor.py:161} INFO - Started process (PID=393) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:00:43.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:00:43.653+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:00:43.652+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:00:43.678+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:00:43.716+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:00:43.715+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:00:43.741+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:00:43.741+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:00:43.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.129 seconds
+[2026-01-16T11:01:14.007+0000] {processor.py:161} INFO - Started process (PID=398) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:01:14.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:01:14.009+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:01:14.009+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:01:14.042+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:01:14.084+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:01:14.084+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:01:14.115+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:01:14.115+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:01:14.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.144 seconds
+[2026-01-16T11:01:44.419+0000] {processor.py:161} INFO - Started process (PID=403) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:01:44.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:01:44.421+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:01:44.421+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:01:44.447+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:01:44.484+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:01:44.484+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:01:44.507+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:01:44.506+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:01:44.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.117 seconds
+[2026-01-16T11:02:14.734+0000] {processor.py:161} INFO - Started process (PID=408) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:02:14.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:02:14.737+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:02:14.736+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:02:14.761+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:02:14.803+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:02:14.803+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:02:14.841+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:02:14.841+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:02:14.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.142 seconds
+[2026-01-16T11:02:45.177+0000] {processor.py:161} INFO - Started process (PID=413) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:02:45.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:02:45.180+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:02:45.179+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:02:45.202+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:02:45.238+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:02:45.237+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:02:45.283+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:02:45.283+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:02:45.322+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.151 seconds
+[2026-01-16T11:03:15.531+0000] {processor.py:161} INFO - Started process (PID=418) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:03:15.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:03:15.533+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:03:15.533+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:03:15.557+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:03:15.609+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:03:15.609+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:03:15.656+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:03:15.656+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:03:15.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.161 seconds
+[2026-01-16T11:03:45.841+0000] {processor.py:161} INFO - Started process (PID=423) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:03:45.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:03:45.845+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:03:45.844+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:03:45.882+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:03:45.936+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:03:45.936+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:03:45.971+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:03:45.971+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:03:45.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.170 seconds
+[2026-01-16T11:04:16.385+0000] {processor.py:161} INFO - Started process (PID=428) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:04:16.387+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:04:16.389+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:04:16.388+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:04:16.417+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:04:16.473+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:04:16.473+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:04:16.499+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:04:16.498+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:04:16.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.146 seconds
+[2026-01-16T11:04:46.770+0000] {processor.py:161} INFO - Started process (PID=435) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:04:46.772+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:04:46.774+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:04:46.773+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:04:46.827+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:04:46.888+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:04:46.888+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:04:46.922+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:04:46.922+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:04:46.953+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.196 seconds
+[2026-01-16T11:05:17.606+0000] {processor.py:161} INFO - Started process (PID=442) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:05:17.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:05:17.608+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:05:17.608+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:05:17.718+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:05:17.773+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:05:17.773+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:05:17.798+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:05:17.798+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:05:17.826+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.228 seconds
+[2026-01-16T11:05:47.939+0000] {processor.py:161} INFO - Started process (PID=447) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:05:47.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:05:47.946+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:05:47.945+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:05:47.982+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:05:48.037+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:05:48.036+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:05:48.067+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:05:48.067+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:05:48.101+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.172 seconds
+[2026-01-16T11:06:18.379+0000] {processor.py:161} INFO - Started process (PID=452) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:06:18.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:06:18.382+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:06:18.381+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:06:18.434+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:06:18.490+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:06:18.489+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:06:18.526+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:06:18.526+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:06:18.558+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.188 seconds
+[2026-01-16T11:06:48.874+0000] {processor.py:161} INFO - Started process (PID=457) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:06:48.876+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:06:48.877+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:06:48.877+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:06:48.913+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:06:48.986+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:06:48.985+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:06:49.023+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:06:49.022+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:06:49.054+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.187 seconds
+[2026-01-16T11:07:19.193+0000] {processor.py:161} INFO - Started process (PID=462) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:07:19.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:07:19.196+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:07:19.195+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:07:19.226+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:07:19.269+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:07:19.269+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:07:19.307+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:07:19.307+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:07:19.332+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.147 seconds
+[2026-01-16T11:07:49.842+0000] {processor.py:161} INFO - Started process (PID=467) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:07:49.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:07:49.846+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:07:49.845+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:07:49.874+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:07:49.919+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:07:49.919+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:07:49.944+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:07:49.944+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:07:49.966+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.134 seconds
+[2026-01-16T11:08:20.327+0000] {processor.py:161} INFO - Started process (PID=472) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:08:20.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:08:20.332+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:08:20.332+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:08:20.404+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:08:20.441+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:08:20.440+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:08:20.466+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:08:20.466+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:08:20.490+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.178 seconds
+[2026-01-16T11:08:50.886+0000] {processor.py:161} INFO - Started process (PID=477) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:08:50.887+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:08:50.889+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:08:50.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:08:50.914+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:08:50.951+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:08:50.951+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:08:50.977+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:08:50.977+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:08:51.001+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.122 seconds
+[2026-01-16T11:09:21.332+0000] {processor.py:161} INFO - Started process (PID=482) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:09:21.334+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:09:21.335+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:09:21.334+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:09:21.358+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:09:21.406+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:09:21.405+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:09:21.433+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:09:21.433+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:09:21.461+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.138 seconds
+[2026-01-16T11:09:51.878+0000] {processor.py:161} INFO - Started process (PID=487) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:09:51.879+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:09:51.882+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:09:51.882+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:09:51.909+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:09:51.947+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:09:51.946+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:09:51.987+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:09:51.987+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:09:52.014+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.145 seconds
+[2026-01-16T11:10:22.266+0000] {processor.py:161} INFO - Started process (PID=496) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:10:22.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:10:22.270+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:10:22.269+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:10:22.305+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:10:22.385+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:10:22.384+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:10:22.426+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:10:22.425+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:10:22.471+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.212 seconds
+[2026-01-16T11:10:52.836+0000] {processor.py:161} INFO - Started process (PID=501) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:10:52.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:10:52.839+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:10:52.839+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:10:52.913+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:10:53.057+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:10:53.055+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:10:53.173+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:10:53.173+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:10:53.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.415 seconds
+[2026-01-16T11:11:24.050+0000] {processor.py:161} INFO - Started process (PID=506) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:11:24.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:11:24.053+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:11:24.053+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:11:24.097+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:11:24.193+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:11:24.193+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:11:24.245+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:11:24.244+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:11:24.295+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.254 seconds
+[2026-01-16T11:11:54.679+0000] {processor.py:161} INFO - Started process (PID=511) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:11:54.681+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:11:54.684+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:11:54.683+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:11:54.743+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:11:54.839+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:11:54.839+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:11:54.903+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:11:54.902+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:11:54.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.265 seconds
+[2026-01-16T11:12:25.037+0000] {processor.py:161} INFO - Started process (PID=516) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:12:25.039+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:12:25.040+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:12:25.040+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:12:25.064+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:12:25.113+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:12:25.113+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:12:25.139+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:12:25.139+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:12:25.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.146 seconds
+[2026-01-16T11:12:55.408+0000] {processor.py:161} INFO - Started process (PID=521) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:12:55.410+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:12:55.411+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:12:55.410+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:12:55.506+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:12:55.571+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:12:55.571+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:12:55.697+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:12:55.696+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:12:55.728+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.349 seconds
+[2026-01-16T11:13:26.061+0000] {processor.py:161} INFO - Started process (PID=526) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:13:26.062+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:13:26.063+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:13:26.063+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:13:26.088+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:13:26.124+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:13:26.124+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:13:26.148+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:13:26.148+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:13:26.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.120 seconds
+[2026-01-16T11:13:56.380+0000] {processor.py:161} INFO - Started process (PID=531) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:13:56.381+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:13:56.382+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:13:56.382+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:13:56.407+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:13:56.443+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:13:56.443+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:13:56.467+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:13:56.467+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:13:56.490+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.117 seconds
+[2026-01-16T11:14:26.852+0000] {processor.py:161} INFO - Started process (PID=536) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:14:26.854+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:14:26.855+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:14:26.855+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:14:26.878+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:14:26.913+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:14:26.913+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:14:26.953+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:14:26.953+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:14:26.985+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.139 seconds
+[2026-01-16T11:14:57.226+0000] {processor.py:161} INFO - Started process (PID=541) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:14:57.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:14:57.228+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:14:57.228+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:14:57.253+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:14:57.291+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:14:57.291+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:14:57.314+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:14:57.314+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:14:57.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.119 seconds
+[2026-01-16T11:15:27.665+0000] {processor.py:161} INFO - Started process (PID=546) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:15:27.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:15:27.667+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:15:27.667+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:15:27.712+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:15:27.767+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:15:27.767+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:15:27.802+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:15:27.802+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:15:27.829+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.176 seconds
+[2026-01-16T11:15:58.148+0000] {processor.py:161} INFO - Started process (PID=551) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:15:58.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:15:58.151+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:15:58.150+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:15:58.173+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:15:58.210+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:15:58.209+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:15:58.234+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:15:58.233+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:15:58.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.116 seconds
+[2026-01-16T11:16:28.527+0000] {processor.py:161} INFO - Started process (PID=556) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:16:28.528+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:16:28.529+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:16:28.529+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:16:28.559+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:16:28.604+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:16:28.603+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:16:28.638+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:16:28.638+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:16:28.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.147 seconds
+[2026-01-16T11:16:58.966+0000] {processor.py:161} INFO - Started process (PID=561) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:16:58.967+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:16:58.968+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:16:58.968+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:16:58.995+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:16:59.039+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:16:59.039+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:16:59.062+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:16:59.062+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:16:59.088+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.128 seconds
+[2026-01-16T11:17:29.408+0000] {processor.py:161} INFO - Started process (PID=566) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:17:29.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:17:29.410+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:17:29.410+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:17:29.432+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:17:29.470+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:17:29.470+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:17:29.518+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:17:29.517+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:17:29.613+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.212 seconds
+[2026-01-16T11:17:59.794+0000] {processor.py:161} INFO - Started process (PID=571) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:17:59.798+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:17:59.800+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:17:59.800+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:17:59.839+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:17:59.902+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:17:59.902+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:17:59.934+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:17:59.934+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:17:59.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.204 seconds
+[2026-01-16T11:18:30.220+0000] {processor.py:161} INFO - Started process (PID=576) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:18:30.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:18:30.223+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:18:30.222+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:18:30.245+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:18:30.338+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:18:30.338+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:18:30.484+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:18:30.484+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:18:30.547+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.347 seconds
+[2026-01-16T11:19:00.635+0000] {processor.py:161} INFO - Started process (PID=581) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:19:00.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:19:00.637+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:19:00.637+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:19:00.658+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:19:00.695+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:19:00.695+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:19:00.718+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:19:00.718+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:19:00.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.111 seconds
+[2026-01-16T11:19:30.950+0000] {processor.py:161} INFO - Started process (PID=586) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:19:30.951+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:19:30.952+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:19:30.952+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:19:30.973+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:19:31.009+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:19:31.009+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:19:31.034+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:19:31.034+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:19:31.054+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.110 seconds
+[2026-01-16T11:20:01.374+0000] {processor.py:161} INFO - Started process (PID=591) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:20:01.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:20:01.377+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:20:01.376+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:20:01.402+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:20:01.442+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:20:01.442+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:20:01.471+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:20:01.471+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:20:01.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.133 seconds
+[2026-01-16T11:20:31.742+0000] {processor.py:161} INFO - Started process (PID=596) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:20:31.743+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:20:31.744+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:20:31.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:20:31.767+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:20:31.811+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:20:31.811+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:20:31.837+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:20:31.837+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:20:31.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.135 seconds
+[2026-01-16T11:21:02.151+0000] {processor.py:161} INFO - Started process (PID=601) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:21:02.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:21:02.154+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:21:02.154+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:21:02.177+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:21:02.213+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:21:02.213+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:21:02.236+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:21:02.236+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:21:02.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.115 seconds
+[2026-01-16T11:21:32.514+0000] {processor.py:161} INFO - Started process (PID=606) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:21:32.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:21:32.516+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:21:32.516+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:21:32.540+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:21:32.583+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:21:32.583+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:21:32.607+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:21:32.606+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:21:32.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.124 seconds
+[2026-01-16T11:22:02.912+0000] {processor.py:161} INFO - Started process (PID=611) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:22:02.913+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:22:02.914+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:22:02.914+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:22:02.938+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:22:02.973+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:22:02.973+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:22:02.996+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:22:02.996+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:22:03.015+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.110 seconds
+[2026-01-16T11:22:33.342+0000] {processor.py:161} INFO - Started process (PID=616) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:22:33.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:22:33.345+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:22:33.345+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:22:33.378+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:22:33.420+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:22:33.419+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:22:33.471+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:22:33.471+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:22:33.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.193 seconds
+[2026-01-16T11:23:03.748+0000] {processor.py:161} INFO - Started process (PID=621) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:23:03.750+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:23:03.751+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:23:03.750+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:23:03.774+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:23:03.813+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:23:03.813+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:23:03.885+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:23:03.885+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:23:03.907+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.166 seconds
+[2026-01-16T11:23:34.175+0000] {processor.py:161} INFO - Started process (PID=626) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:23:34.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:23:34.179+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:23:34.178+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:23:34.214+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:23:34.253+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:23:34.253+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:23:34.281+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:23:34.281+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:23:34.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.155 seconds
+[2026-01-16T11:24:04.749+0000] {processor.py:161} INFO - Started process (PID=631) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:24:04.751+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:24:04.752+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:24:04.751+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:24:04.780+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:24:04.820+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:24:04.820+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:24:04.849+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:24:04.849+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:24:04.876+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.135 seconds
+[2026-01-16T11:24:35.274+0000] {processor.py:161} INFO - Started process (PID=636) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:24:35.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:24:35.278+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:24:35.277+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:24:35.301+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:24:35.337+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:24:35.337+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:24:35.361+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:24:35.361+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:24:35.383+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.115 seconds
+[2026-01-16T11:25:05.840+0000] {processor.py:161} INFO - Started process (PID=641) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:25:05.841+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:25:05.843+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:25:05.842+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:25:05.874+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:25:05.925+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:25:05.925+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:25:05.957+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:25:05.957+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:25:05.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.160 seconds
+[2026-01-16T11:25:36.376+0000] {processor.py:161} INFO - Started process (PID=646) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:25:36.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:25:36.378+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:25:36.378+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:25:36.413+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:25:36.473+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:25:36.473+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:25:36.510+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:25:36.510+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:25:36.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.181 seconds
+[2026-01-16T11:25:59.651+0000] {processor.py:161} INFO - Started process (PID=651) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:25:59.652+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:25:59.654+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:25:59.653+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:25:59.732+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:25:59.708+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 13, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:25:59.734+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:25:59.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.142 seconds
+[2026-01-16T11:26:30.131+0000] {processor.py:161} INFO - Started process (PID=656) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:26:30.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:26:30.134+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:26:30.133+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:26:30.159+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:26:30.152+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 13, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:26:30.160+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:26:30.192+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.068 seconds
+[2026-01-16T11:29:09.136+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:29:09.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:29:09.142+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:29:09.142+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:29:09.182+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:29:09.173+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 13, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:29:09.185+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:29:09.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.103 seconds
+[2026-01-16T11:29:40.384+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:29:40.400+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:29:40.403+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:29:40.402+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:29:40.717+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:29:40.665+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 13, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:29:40.745+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:29:40.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 1.272 seconds
+[2026-01-16T11:30:11.660+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:30:11.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:30:11.663+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:30:11.663+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:30:11.686+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:30:11.677+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 13, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:30:11.687+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:30:11.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.072 seconds
+[2026-01-16T11:30:42.007+0000] {processor.py:161} INFO - Started process (PID=174) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:30:42.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:30:42.013+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:30:42.013+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:30:42.039+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:30:42.032+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 13, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:30:42.041+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:30:42.078+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.084 seconds
+[2026-01-16T11:31:12.343+0000] {processor.py:161} INFO - Started process (PID=179) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:31:12.350+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:31:12.353+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:31:12.352+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:31:12.379+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:31:12.373+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 13, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:31:12.380+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:31:12.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.086 seconds
+[2026-01-16T11:31:42.855+0000] {processor.py:161} INFO - Started process (PID=184) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:31:42.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:31:42.882+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:31:42.882+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:31:42.926+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:31:42.913+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 13, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:31:42.933+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:31:42.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.155 seconds
+[2026-01-16T11:32:13.145+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:32:13.146+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:32:13.151+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:32:13.150+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:32:13.180+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:32:13.172+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 13, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:32:13.181+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:32:13.217+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.083 seconds
+[2026-01-16T11:32:18.221+0000] {processor.py:161} INFO - Started process (PID=194) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:32:18.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:32:18.225+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:32:18.225+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:32:18.273+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:32:18.263+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 19, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:32:18.275+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:32:18.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.131 seconds
+[2026-01-16T11:33:17.750+0000] {processor.py:161} INFO - Started process (PID=158) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:33:17.757+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:33:17.806+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:33:17.796+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:33:17.918+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:33:17.891+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 19, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:33:17.922+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:33:18.101+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.408 seconds
+[2026-01-16T11:33:48.847+0000] {processor.py:161} INFO - Started process (PID=163) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:33:48.849+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:33:48.851+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:33:48.850+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:33:48.872+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:33:48.866+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 19, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:33:48.873+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:33:48.899+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.058 seconds
+[2026-01-16T11:34:19.078+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:34:19.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:34:19.087+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:34:19.086+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:34:19.154+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:34:19.138+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 19, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:34:19.156+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:34:19.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.169 seconds
+[2026-01-16T11:34:49.436+0000] {processor.py:161} INFO - Started process (PID=173) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:34:49.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:34:49.440+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:34:49.440+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:34:49.505+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:34:49.492+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 19, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:34:49.506+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:34:49.535+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.114 seconds
+[2026-01-16T11:35:19.781+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:35:19.782+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:35:19.785+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:35:19.785+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:35:19.821+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:35:19.812+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 19, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:35:19.826+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:35:19.867+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.095 seconds
+[2026-01-16T11:35:50.123+0000] {processor.py:161} INFO - Started process (PID=183) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:35:50.124+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:35:50.128+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:35:50.127+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:35:50.151+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:35:50.145+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 19, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:35:50.152+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:35:50.183+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.066 seconds
+[2026-01-16T11:36:20.460+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:36:20.462+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:36:20.465+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:36:20.464+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:36:20.488+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:36:20.481+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/iceberg_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/iceberg_dag.py", line 19, in <module>
+    bronze = DockerOperator(
+             ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/docker/operators/docker.py", line 273, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 485, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 882, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: bronze_ingest). Invalid arguments were:
+**kwargs: {'detach': False}
+[2026-01-16T11:36:20.489+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:36:20.518+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.064 seconds
+[2026-01-16T11:36:23.616+0000] {processor.py:161} INFO - Started process (PID=193) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:36:23.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:36:23.620+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:36:23.619+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:36:23.898+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:36:28.209+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:36:28.204+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:iceberg_pipeline
+[2026-01-16T11:36:28.241+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:36:28.241+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:iceberg_pipeline
+[2026-01-16T11:36:28.271+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:36:28.271+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:iceberg_pipeline
+[2026-01-16T11:36:28.273+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:36:28.272+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:36:28.317+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:36:28.317+0000] {dag.py:3111} INFO - Creating ORM DAG for iceberg_pipeline
+[2026-01-16T11:36:28.360+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:36:28.360+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:36:28.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 4.838 seconds
+[2026-01-16T11:38:43.420+0000] {processor.py:161} INFO - Started process (PID=159) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:38:43.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:38:43.437+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:38:43.436+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:38:43.521+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:38:44.721+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:38:44.719+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:iceberg_pipeline
+[2026-01-16T11:38:44.767+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:38:44.767+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:iceberg_pipeline
+[2026-01-16T11:38:44.796+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:38:44.795+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:iceberg_pipeline
+[2026-01-16T11:38:44.797+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:38:44.797+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:38:44.848+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:38:44.847+0000] {dag.py:3111} INFO - Creating ORM DAG for iceberg_pipeline
+[2026-01-16T11:38:44.887+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:38:44.887+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:38:44.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 1.551 seconds
+[2026-01-16T11:39:16.111+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:39:16.113+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:39:16.114+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:39:16.114+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:39:16.133+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:39:16.169+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:39:16.168+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:39:16.198+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:39:16.198+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:39:16.225+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.312 seconds
+[2026-01-16T11:39:47.029+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:39:47.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:39:47.033+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:39:47.033+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:39:47.059+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:39:47.106+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:39:47.105+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:39:47.132+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:39:47.132+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-15 00:00:00+00:00, run_after=2026-01-16 00:00:00+00:00
+[2026-01-16T11:39:47.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.139 seconds
+[2026-01-16T11:40:18.031+0000] {processor.py:161} INFO - Started process (PID=178) to work on /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:40:18.033+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/iceberg_dag.py for tasks to queue
+[2026-01-16T11:40:18.036+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:40:18.036+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:40:18.064+0000] {processor.py:840} INFO - DAG(s) 'iceberg_pipeline' retrieved from /opt/airflow/dags/iceberg_dag.py
+[2026-01-16T11:40:18.101+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:40:18.101+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-01-16T11:40:18.131+0000] {logging_mixin.py:188} INFO - [2026-01-16T11:40:18.131+0000] {dag.py:3947} INFO - Setting next_dagrun for iceberg_pipeline to 2026-01-16 00:00:00+00:00, run_after=2026-01-17 00:00:00+00:00
+[2026-01-16T11:40:18.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/iceberg_dag.py took 0.130 seconds
