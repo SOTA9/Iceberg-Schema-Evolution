@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This project implements a **fully automated data pipeline** for ingesting, transforming, and loading e-commerce data from a **public API** into a **medallion architecture** (Bronze → Silver → Gold) using **Iceberg**, **Spark**, **GCS**, and **BigQuery**. The pipeline is orchestrated with **Astronomer / Cloud Airflow** and versioned with **GitLab CI/CD**.
+This project implements a **fully automated data pipeline** for ingesting, transforming, and loading e-commerce data from a **public API** into a **medallion architecture** (Bronze → Silver → Gold) using **Iceberg**, **Spark**, **GCS**, and **BigQuery**. The pipeline is orchestrated with **Astronomer / Cloud Airflow**.
 
 ---
 
-## ✅ Key Features
+## Key Features
 
 - **Bronze ingestion** automatically detects new schema fields and applies them using Iceberg.
 - **Idempotent**: safe to run daily without errors.

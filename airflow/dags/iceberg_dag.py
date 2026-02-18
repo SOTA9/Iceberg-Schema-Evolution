@@ -8,7 +8,7 @@ DEFAULT_ARGS = {
 }
 
 with DAG(
-    dag_id="iceberg_pipeline",
+    dag_id="ecommerce_iceberg_pipeline",
     start_date=datetime(2025, 1, 1),
     schedule="@daily",
     catchup=False,

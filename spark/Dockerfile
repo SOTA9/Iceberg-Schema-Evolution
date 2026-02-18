@@ -1,23 +1,13 @@
-# ===============================================
-# Dockerfile: Spark 4 + Iceberg 1.10.1 + Python 3
-# Flexible: Local or GCS
-# ===============================================
 FROM apache/spark:4.0.1-scala2.13-java21-ubuntu
 
 USER root
 
-# -----------------------------
-# Install Python + utilities
-# -----------------------------
 RUN apt-get update && apt-get install -y \
         python3 python3-pip curl unzip \
     && rm -rf /var/lib/apt/lists/*
 
 RUN python3 -m pip install --upgrade pip
 
-# -----------------------------
-# Environment variables
-# -----------------------------
 ENV PYSPARK_PYTHON=python3 \
     PYTHONPATH=/opt/spark/src \
     IVY_HOME=/opt/spark/.ivy2 \
@@ -25,27 +15,15 @@ ENV PYSPARK_PYTHON=python3 \
     SPARK_SUBMIT_OPTS="-Dspark.jars.ivy=/opt/spark/.ivy2" \
     SPARK_HOME=/opt/spark
 
-# -----------------------------
-# Create writable folders
-# -----------------------------
 RUN mkdir -p /opt/spark/.ivy2 /tmp/spark && \
     chmod -R 777 /opt/spark/.ivy2 /tmp/spark
 
-# -----------------------------
-# Copy and install Python dependencies
-# -----------------------------
 COPY requirements.txt /opt/spark/requirements.txt
 RUN pip3 install --no-cache-dir -r /opt/spark/requirements.txt
 
-# -----------------------------
-# Copy Spark scripts
-# -----------------------------
 COPY src /opt/spark/src
 WORKDIR /opt/spark/src
 
-# -----------------------------
-# Pre-download Iceberg + GCS jars (optional)
-# -----------------------------
 RUN echo "print('dummy')" > dummy_script.py
 RUN $SPARK_HOME/bin/spark-submit \
       --packages \
@@ -57,18 +35,11 @@ com.google.oauth-client:google-oauth-client:1.34.1 \
       --master local[*] dummy_script.py || true
 RUN rm dummy_script.py
 
-# -----------------------------
-# Create non-root user
-# -----------------------------
 RUN useradd -ms /bin/bash sparkuser && \
     chown -R sparkuser:sparkuser /opt/spark/.ivy2 /tmp/spark /opt/spark/src
 
 USER sparkuser
 
-# -----------------------------
-# Default command (for local testing)
-# Airflow DAGs override this
-# -----------------------------
 CMD ["python3", "bronze_ingest.py"]
 
 
