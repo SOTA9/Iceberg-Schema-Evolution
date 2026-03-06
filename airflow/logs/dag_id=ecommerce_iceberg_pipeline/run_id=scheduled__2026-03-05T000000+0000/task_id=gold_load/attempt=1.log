@@ -1,0 +1,145 @@
+[2026-03-06T10:46:43.193+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-06T10:46:43.267+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecommerce_iceberg_pipeline.gold_load scheduled__2026-03-05T00:00:00+00:00 [queued]>
+[2026-03-06T10:46:43.281+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecommerce_iceberg_pipeline.gold_load scheduled__2026-03-05T00:00:00+00:00 [queued]>
+[2026-03-06T10:46:43.283+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2026-03-06T10:46:43.311+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): gold_load> on 2026-03-05 00:00:00+00:00
+[2026-03-06T10:46:43.324+0000] {standard_task_runner.py:64} INFO - Started process 236 to run task
+[2026-03-06T10:46:43.333+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ecommerce_iceberg_pipeline', 'gold_load', 'scheduled__2026-03-05T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/iceberg_dag.py', '--cfg-path', '/tmp/tmp7_n7vm9p']
+[2026-03-06T10:46:43.338+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask gold_load
+[2026-03-06T10:46:43.597+0000] {task_command.py:426} INFO - Running <TaskInstance: ecommerce_iceberg_pipeline.gold_load scheduled__2026-03-05T00:00:00+00:00 [running]> on host 7afefc26c634
+[2026-03-06T10:46:43.808+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='ecommerce_iceberg_pipeline' AIRFLOW_CTX_TASK_ID='gold_load' AIRFLOW_CTX_EXECUTION_DATE='2026-03-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-05T00:00:00+00:00'
+[2026-03-06T10:46:43.811+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-06T10:46:43.937+0000] {docker.py:359} INFO - Starting docker container from image spark-iceberg:latest
+[2026-03-06T10:46:50.834+0000] {docker.py:429} INFO - WARNING: Using incubator modules: jdk.incubator.vector
+[2026-03-06T10:46:56.279+0000] {docker.py:429} INFO - :: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2026-03-06T10:46:57.394+0000] {docker.py:429} INFO - Ivy Default Cache set to: /opt/spark/.ivy2/cache
+[2026-03-06T10:46:57.426+0000] {docker.py:429} INFO - The jars for the packages stored in: /opt/spark/.ivy2/jars
+[2026-03-06T10:46:57.468+0000] {docker.py:429} INFO - org.apache.iceberg#iceberg-spark-runtime-4.0_2.13 added as a dependency
+org.apache.iceberg#iceberg-gcp added as a dependency
+com.google.api-client#google-api-client added as a dependency
+com.google.http-client#google-http-client-gson added as a dependency
+com.google.oauth-client#google-oauth-client added as a dependency
+[2026-03-06T10:46:57.477+0000] {docker.py:429} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-4d38ad14-d808-4334-8f25-82f4be15de44;1.0
+	confs: [default]
+[2026-03-06T10:46:58.168+0000] {docker.py:429} INFO - found org.apache.iceberg#iceberg-spark-runtime-4.0_2.13;1.10.1 in central
+[2026-03-06T10:46:58.324+0000] {docker.py:429} INFO - found org.apache.iceberg#iceberg-gcp;1.10.1 in central
+[2026-03-06T10:46:58.492+0000] {docker.py:429} INFO - found org.apache.iceberg#iceberg-api;1.10.1 in central
+[2026-03-06T10:46:58.612+0000] {docker.py:429} INFO - found org.slf4j#slf4j-api;2.0.17 in central
+[2026-03-06T10:46:58.819+0000] {docker.py:429} INFO - found org.apache.iceberg#iceberg-bundled-guava;1.10.1 in central
+[2026-03-06T10:46:59.112+0000] {docker.py:429} INFO - found org.apache.iceberg#iceberg-common;1.10.1 in central
+[2026-03-06T10:46:59.449+0000] {docker.py:429} INFO - found org.apache.iceberg#iceberg-core;1.10.1 in central
+[2026-03-06T10:46:59.861+0000] {docker.py:429} INFO - found org.apache.avro#avro;1.12.0 in central
+[2026-03-06T10:47:00.031+0000] {docker.py:429} INFO - found com.fasterxml.jackson.core#jackson-core;2.19.2 in central
+[2026-03-06T10:47:00.246+0000] {docker.py:429} INFO - found com.fasterxml.jackson.core#jackson-databind;2.19.2 in central
+[2026-03-06T10:47:00.374+0000] {docker.py:429} INFO - found com.fasterxml.jackson.core#jackson-annotations;2.19.2 in central
+[2026-03-06T10:47:00.612+0000] {docker.py:429} INFO - found org.apache.commons#commons-compress;1.26.2 in central
+[2026-03-06T10:47:00.834+0000] {docker.py:429} INFO - found commons-codec#commons-codec;1.17.0 in central
+[2026-03-06T10:47:01.055+0000] {docker.py:429} INFO - found commons-io#commons-io;2.16.1 in central
+[2026-03-06T10:47:01.184+0000] {docker.py:429} INFO - found org.apache.commons#commons-lang3;3.15.0 in central
+[2026-03-06T10:47:01.467+0000] {docker.py:429} INFO - found io.airlift#aircompressor;0.27 in central
+[2026-03-06T10:47:01.854+0000] {docker.py:429} INFO - found org.apache.httpcomponents.client5#httpclient5;5.5 in central
+[2026-03-06T10:47:02.521+0000] {docker.py:429} INFO - found org.apache.httpcomponents.core5#httpcore5;5.3.4 in central
+[2026-03-06T10:47:02.913+0000] {docker.py:429} INFO - found org.apache.httpcomponents.core5#httpcore5-h2;5.3.4 in central
+[2026-03-06T10:47:03.678+0000] {docker.py:429} INFO - found com.github.ben-manes.caffeine#caffeine;2.9.3 in central
+[2026-03-06T10:47:05.035+0000] {docker.py:429} INFO - found org.checkerframework#checker-qual;3.19.0 in central
+[2026-03-06T10:47:05.440+0000] {docker.py:429} INFO - found com.google.errorprone#error_prone_annotations;2.10.0 in central
+[2026-03-06T10:47:05.586+0000] {docker.py:429} INFO - found org.roaringbitmap#RoaringBitmap;1.3.0 in central
+[2026-03-06T10:47:05.651+0000] {docker.py:429} INFO - found com.google.api-client#google-api-client;2.2.0 in central
+[2026-03-06T10:47:05.781+0000] {docker.py:429} INFO - found com.google.oauth-client#google-oauth-client;1.34.1 in central
+[2026-03-06T10:47:05.902+0000] {docker.py:429} INFO - found com.google.http-client#google-http-client;1.42.3 in central
+[2026-03-06T10:47:06.068+0000] {docker.py:429} INFO - found org.apache.httpcomponents#httpclient;4.5.14 in central
+[2026-03-06T10:47:06.149+0000] {docker.py:429} INFO - found org.apache.httpcomponents#httpcore;4.4.16 in central
+[2026-03-06T10:47:06.267+0000] {docker.py:429} INFO - found commons-logging#commons-logging;1.2 in central
+[2026-03-06T10:47:06.493+0000] {docker.py:429} INFO - found com.google.code.findbugs#jsr305;3.0.2 in central
+[2026-03-06T10:47:06.663+0000] {docker.py:429} INFO - found com.google.errorprone#error_prone_annotations;2.16 in central
+[2026-03-06T10:47:06.734+0000] {docker.py:429} INFO - found com.google.guava#guava;31.1-jre in central
+[2026-03-06T10:47:06.812+0000] {docker.py:429} INFO - found com.google.guava#failureaccess;1.0.1 in central
+[2026-03-06T10:47:06.854+0000] {docker.py:429} INFO - found com.google.guava#listenablefuture;9999.0-empty-to-avoid-conflict-with-guava in central
+[2026-03-06T10:47:06.932+0000] {docker.py:429} INFO - found com.google.j2objc#j2objc-annotations;1.3 in central
+[2026-03-06T10:47:06.976+0000] {docker.py:429} INFO - found io.opencensus#opencensus-api;0.31.1 in central
+[2026-03-06T10:47:07.000+0000] {docker.py:429} INFO - found io.grpc#grpc-context;1.27.2 in central
+[2026-03-06T10:47:07.025+0000] {docker.py:429} INFO - found io.opencensus#opencensus-contrib-http-util;0.31.1 in central
+[2026-03-06T10:47:07.050+0000] {docker.py:429} INFO - found com.google.http-client#google-http-client-gson;1.42.3 in central
+[2026-03-06T10:47:07.075+0000] {docker.py:429} INFO - found com.google.code.gson#gson;2.10.1 in central
+[2026-03-06T10:47:07.111+0000] {docker.py:429} INFO - found com.google.http-client#google-http-client-apache-v2;1.42.3 in central
+[2026-03-06T10:47:07.301+0000] {docker.py:429} INFO - :: resolution report :: resolve 9758ms :: artifacts dl 141ms
+[2026-03-06T10:47:07.306+0000] {docker.py:429} INFO - :: modules in use:
+[2026-03-06T10:47:07.315+0000] {docker.py:429} INFO - com.fasterxml.jackson.core#jackson-annotations;2.19.2 from central in [default]
+[2026-03-06T10:47:07.366+0000] {docker.py:429} INFO - com.fasterxml.jackson.core#jackson-core;2.19.2 from central in [default]
+	com.fasterxml.jackson.core#jackson-databind;2.19.2 from central in [default]
+	com.github.ben-manes.caffeine#caffeine;2.9.3 from central in [default]
+	com.google.api-client#google-api-client;2.2.0 from central in [default]
+	com.google.code.findbugs#jsr305;3.0.2 from central in [default]
+	com.google.code.gson#gson;2.10.1 from central in [default]
+	com.google.errorprone#error_prone_annotations;2.16 from central in [default]
+	com.google.guava#failureaccess;1.0.1 from central in [default]
+	com.google.guava#guava;31.1-jre from central in [default]
+	com.google.guava#listenablefuture;9999.0-empty-to-avoid-conflict-with-guava from central in [default]
+	com.google.http-client#google-http-client;1.42.3 from central in [default]
+	com.google.http-client#google-http-client-apache-v2;1.42.3 from central in [default]
+	com.google.http-client#google-http-client-gson;1.42.3 from central in [default]
+	com.google.j2objc#j2objc-annotations;1.3 from central in [default]
+[2026-03-06T10:47:07.367+0000] {docker.py:429} INFO - com.google.oauth-client#google-oauth-client;1.34.1 from central in [default]
+	commons-codec#commons-codec;1.17.0 from central in [default]
+	commons-io#commons-io;2.16.1 from central in [default]
+[2026-03-06T10:47:07.373+0000] {docker.py:429} INFO - commons-logging#commons-logging;1.2 from central in [default]
+	io.airlift#aircompressor;0.27 from central in [default]
+	io.grpc#grpc-context;1.27.2 from central in [default]
+	io.opencensus#opencensus-api;0.31.1 from central in [default]
+	io.opencensus#opencensus-contrib-http-util;0.31.1 from central in [default]
+	org.apache.avro#avro;1.12.0 from central in [default]
+	org.apache.commons#commons-compress;1.26.2 from central in [default]
+	org.apache.commons#commons-lang3;3.15.0 from central in [default]
+	org.apache.httpcomponents#httpclient;4.5.14 from central in [default]
+	org.apache.httpcomponents#httpcore;4.4.16 from central in [default]
+	org.apache.httpcomponents.client5#httpclient5;5.5 from central in [default]
+	org.apache.httpcomponents.core5#httpcore5;5.3.4 from central in [default]
+	org.apache.httpcomponents.core5#httpcore5-h2;5.3.4 from central in [default]
+	org.apache.iceberg#iceberg-api;1.10.1 from central in [default]
+	org.apache.iceberg#iceberg-bundled-guava;1.10.1 from central in [default]
+	org.apache.iceberg#iceberg-common;1.10.1 from central in [default]
+	org.apache.iceberg#iceberg-core;1.10.1 from central in [default]
+	org.apache.iceberg#iceberg-gcp;1.10.1 from central in [default]
+	org.apache.iceberg#iceberg-spark-runtime-4.0_2.13;1.10.1 from central in [default]
+	org.checkerframework#checker-qual;3.19.0 from central in [default]
+	org.roaringbitmap#RoaringBitmap;1.3.0 from central in [default]
+	org.slf4j#slf4j-api;2.0.17 from central in [default]
+	:: evicted modules:
+	org.slf4j#slf4j-api;2.0.13 by [org.slf4j#slf4j-api;2.0.17] in [default]
+	org.slf4j#slf4j-api;1.7.36 by [org.slf4j#slf4j-api;2.0.17] in [default]
+	com.google.errorprone#error_prone_annotations;2.10.0 by [com.google.errorprone#error_prone_annotations;2.16] in [default]
+	commons-codec#commons-codec;1.15 by [commons-codec#commons-codec;1.17.0] in [default]
+	org.checkerframework#checker-qual;3.12.0 by [org.checkerframework#checker-qual;3.19.0] in [default]
+	com.google.http-client#google-http-client-gson;1.41.0 by [com.google.http-client#google-http-client-gson;1.42.3] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   46  |   0   |   0   |   6   ||   40  |   0   |
+	---------------------------------------------------------------------
+[2026-03-06T10:47:07.554+0000] {docker.py:429} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-4d38ad14-d808-4334-8f25-82f4be15de44
+	confs: [default]
+[2026-03-06T10:47:07.717+0000] {docker.py:429} INFO - 0 artifacts copied, 40 already retrieved (0kB/169ms)
+[2026-03-06T10:47:09.263+0000] {docker.py:429} INFO - 26/03/06 10:47:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-03-06T10:47:10.465+0000] {docker.py:429} INFO - Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+[2026-03-06T10:47:10.469+0000] {docker.py:429} INFO - Setting default log level to "WARN
+[2026-03-06T10:47:10.470+0000] {docker.py:429} INFO - ".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2026-03-06T10:47:39.864+0000] {docker.py:429} INFO - [Stage 0:>                                                          (0 + 1) / 1]
+[2026-03-06T10:47:46.017+0000] {docker.py:429} INFO - [Stage 2:>                                                          (0 + 1) / 1]
+[2026-03-06T10:47:47.460+0000] {docker.py:429} INFO - 
+[2026-03-06T10:47:49.329+0000] {docker.py:429} INFO - Loading gold layer (ENV=dev) from local_catalog.ecommerce.silver_orders ...
+Dev environment — skipping BigQuery load. Sample output:
++-----------+---------+------------+
+|ingest_date|row_count|unique_users|
++-----------+---------+------------+
+| 2026-03-06|      400|          10|
++-----------+---------+------------+
+
+[2026-03-06 10:47:49.326934] Table: local_catalog.ecommerce.silver_orders | Snapshot ID: 3706682813284698307 | Committed At: 2026-03-06 10:46:27.059000
+Gold snapshot ID: 3706682813284698307
+[2026-03-06T10:47:51.681+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-06T10:47:52.529+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ecommerce_iceberg_pipeline, task_id=gold_load, run_id=scheduled__2026-03-05T00:00:00+00:00, execution_date=20260305T000000, start_date=20260306T104643, end_date=20260306T104752
+[2026-03-06T10:47:52.776+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-03-06T10:47:53.412+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-06T10:47:53.471+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

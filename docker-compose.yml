@@ -1,9 +1,22 @@
-version: "3.9"
+x-airflow-common: &airflow-common
+  build: ./airflow
+  env_file:
+    - ./configs/dev/.env
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/logs:/opt/airflow/logs
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /tmp/iceberg-warehouse:/tmp/iceberg-warehouse
+  depends_on:
+    postgres:
+      condition: service_healthy
 
 services:
-  # ----------------------
-  # Postgres (Airflow metadata DB)
-  # ----------------------
+  # ── Postgres ──────────────────────────────────────────────────────────────
   postgres:
     image: postgres:15
     environment:
@@ -17,53 +30,78 @@ services:
       interval: 5s
       retries: 5
 
-  # ----------------------
-  # Airflow Webserver
-  # ----------------------
-  airflow-webserver:
-    build: ./airflow
+  # ── Warehouse dir init (runs as ROOT) ─────────────────────────────────────
+  # Airflow uid=50000 cannot mkdir on the Docker Desktop VM /tmp.
+  # This alpine container runs as root first to create + chmod the path.
+  warehouse-init:
+    image: alpine:3.19
+    user: root
+    volumes:
+      - /tmp/iceberg-warehouse:/tmp/iceberg-warehouse
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        mkdir -p /tmp/iceberg-warehouse/bronze /tmp/iceberg-warehouse/silver
+        chmod -R 777 /tmp/iceberg-warehouse
+        echo "Warehouse directories ready."
+    restart: "no"
+
+  # ── Airflow DB init ───────────────────────────────────────────────────────
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: ["/bin/bash", "-c"]
+    command:
+      - |
+        set -e
+        echo ">>> Running airflow db migrate ..."
+        airflow db migrate
+        echo ">>> Creating admin user ..."
+        airflow users create \
+          --username admin \
+          --password admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com
+        echo ">>> airflow-init complete."
+    restart: "no"
     depends_on:
       postgres:
         condition: service_healthy
-    env_file:
-      - ./configs/dev/.env
-    environment:
-      AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
-    volumes:
-      - ./airflow/dags:/opt/airflow/dags
-      - ./airflow/logs:/opt/airflow/logs
-      - airflow-db-volume:/opt/airflow/airflow.db   # persistent Airflow DB
-      - /var/run/docker.sock:/var/run/docker.sock
+      warehouse-init:
+        condition: service_completed_successfully
+
+  # ── Airflow Webserver ─────────────────────────────────────────────────────
+  airflow-webserver:
+    <<: *airflow-common
     ports:
       - "8080:8080"
     command: webserver
-
-  # ----------------------
-  # Airflow Scheduler
-  # ----------------------
-  airflow-scheduler:
-    build: ./airflow
     depends_on:
-      airflow-webserver:
-        condition: service_started
-    env_file:
-      - ./configs/dev/.env
-    environment:
-      AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-    volumes:
-      - ./airflow/dags:/opt/airflow/dags
-      - ./airflow/logs:/opt/airflow/logs
-      - airflow-db-volume:/opt/airflow/airflow.db
-      - /var/run/docker.sock:/var/run/docker.sock
-    command: scheduler
+      airflow-init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      retries: 5
 
-# ----------------------
-# Volumes
-# ----------------------
+  # ── Airflow Scheduler ─────────────────────────────────────────────────────
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  # ── Spark image build (tagged for DockerOperator) ─────────────────────────
+  spark-iceberg-builder:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile
+    image: spark-iceberg:latest
+    command: echo "Spark image ready."
+    restart: "no"
+
+# ── Volumes ───────────────────────────────────────────────────────────────
 volumes:
   postgres-db-volume:
-  airflow-db-volume:
-
